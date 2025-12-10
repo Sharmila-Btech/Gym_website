@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitnessPro Gym</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Fitness<span>Pro</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Your <span>Body</span>, Transform Your Life</h1>
+            <p>Join our gym today and begin your journey to strength, confidence & wellness.</p>
+            <a href="#contact" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+            <div class="service-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTts3P0lijbAZNPSDosSiv1t4xRX_M18L7b4Q&s" alt="">
+                <h3>Personal Training</h3>
+                <p>One-on-one coaching designed to help you achieve fitness goals faster.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvDQQ2bI58esQJEjSefvpL3EtPIOjA37wNDA&s" alt="">
+                <h3>Strength Training</h3>
+                <p>Build muscle and enhance endurance with expert-guided sessions.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EUJQewv2b9TU45abKp4eB24FmyJk4roR_w&s" alt="">
+                <h3>Cardio Programs</h3>
+                <p>Burn calories and improve your heart health with our cardio routines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"I lost 12kg in 4 months! Amazing trainers and an inspiring atmosphere."</p>
+                <h4>- Priya Sharma</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"The best gym in town! The equipment is modern, and the staff is super friendly."</p>
+                <h4>- Arjun Mehta</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Highly recommend! The fitness programs are tailored and effective."</p>
+                <h4>- Sneha Patel</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 FitnessPro Gym. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const toggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        toggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
